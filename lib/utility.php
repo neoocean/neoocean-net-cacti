@@ -459,7 +459,7 @@ function push_out_data_input_method($data_input_id) {
  */
 function poller_update_poller_cache_from_buffer($local_data_ids, &$poller_items) {
 	/* set all fields present value to 0, to mark the outliers when we are all done */
-	$ids = array();
+	$ids = '';
 	if (sizeof($local_data_ids)) {
 		$count = 0;
 		foreach($local_data_ids as $id) {
@@ -538,7 +538,7 @@ function poller_update_poller_cache_from_buffer($local_data_ids, &$poller_items)
 	}
 
 	/* remove stale records FROM the poller cache */
-	if (sizeof($ids)) {
+	if (strlen($ids)) {
 		db_execute("DELETE FROM poller_item WHERE present=0 AND local_data_id IN ($ids)");
 	} else {
 		/* only handle explicitely given local_data_ids */
