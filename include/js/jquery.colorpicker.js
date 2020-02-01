@@ -1,0 +1,1 @@
+../../../../javascript/libjs-jquery-colorpicker/jquery.colorpicker.js

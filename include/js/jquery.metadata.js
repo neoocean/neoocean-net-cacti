@@ -1,0 +1,1 @@
+../../../../javascript/jquery-metadata/jquery.metadata.min.js

@@ -1,0 +1,1 @@
+../../../../javascript/jquery-tablesorter/js/jquery.tablesorter.widgets.min.js
